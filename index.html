@@ -3,85 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Perrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Mi Currículum</title>
     <style>
+        html{
+            font-family: sans-serif;
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        .timeline-item {
+            padding-left: 40px;
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #007bff; /* Puedes cambiar el color aquí */
+        }
+
+        .timeline-content {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-content h3 {
+            margin-top: 0;
+        }
+
+        .timeline-content h4 {
+            margin-bottom: 10px;
+            color: #007bff; /* Puedes cambiar el color aquí */
+        }
+
+        .timeline-content p {
+            margin-bottom: 0;
+        }
         body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(120deg, #ffcc99, #66b2ff);
-            color: #333;
+            padding: 0;
+            line-height: 1.6;
+            animation: fadeInAnimation 1s ease-in-out;
+        }
+        @keyframes fadeInAnimation {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center; /* Alineación centrada */
             display: flex;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            justify-content: center; /* Centrado horizontal */
+            animation: slideInDown 1s ease-in-out;
+        }
+        @keyframes slideInDown {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            margin-left: 20px; /* Añadido para separar el nombre de la imagen */
+        }
+        .profile-img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px;
+            animation: rotate 8s linear infinite;
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .contact-info {
+            text-align: right;
+        }
+        .contact-info p {
+            margin: 15px 70px;
         }
         .container {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
         }
-        h1 {
-            font-size: 3em;
-            color: #ff6f61;
+        .content {
+            flex-grow: 1;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
             margin-bottom: 20px;
         }
         p {
-            font-size: 1.2em;
-            color: #666;
-        }
-        .button {
-            margin-top: 30px;
-            padding: 10px 20px;
-            background-color: #ff6f61;
-            color: #fff;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #ff8566;
-        }
-        .floating-leaf {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background: url('https://cdn-icons-png.flaticon.com/512/616/616554.png') no-repeat center/contain;
-            animation: float 6s ease-in-out infinite;
-            opacity: 0.8;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-        .leaf-1 {
-            top: 20%;
-            left: 20%;
-            animation-delay: 4s;
-        }
-        .leaf-2 {
-            top: 30%;
-            right: 20%;
-            animation-delay: 2s;
-        }
-        .leaf-3 {
-            top: 80%;
-            left: 30%;
-            animation-delay: 2s;
+            margin-bottom: 15px;
         }
     </style>
 </head>
+
 <body>
+    <header>
+        <div>
+            <img class="profile-img" src="Imagenes/Foto CV.png" alt="Foto de Perfil">
+        </div>
+        <div class="contact-info">
+            <h1>Tobias Perez Zabala</h1>
+            <p>Argentina - Cordoba</p>
+            <p>Teléfono: 351 714 1043</p>
+            <p>Correo electrónico: tobinfra@gmail.com</p>
+        </div>
+    </header>
+    
     <div class="container">
-        <h1>Pagina web creada por Tobias</h1>
-        <p>Hola Pollito, te amo muchooooo</p>
+        <div class="content">
+            <section>
+                <h2>Resumen Profesional</h2>
+                <p>Soy un profesional especializado en soporte técnico y gestión de infraestructuras de redes y networking, respaldado por un bachiller especializado en informática. Durante mi formación, adquirí habilidades en diversos lenguajes de programación, incluyendo HTML, CSS, JavaScript y Python.
+                <p>experiencia laboral inicial me ha brindado la oportunidad de enfrentarme a una variedad de desafíos y obstáculos, donde he demostrado mi capacidad para sortearlos con eficiencia y determinación. Poseo un profundo conocimiento tanto a nivel de software como de hardware, lo que me permite abordar con éxito cualquier problema que surja en el entorno de la computación.</p>
+                <p>Con una habilidad innata para la reparación de PC, puedo diagnosticar y solucionar problemas de manera rápida y efectiva, garantizando un funcionamiento óptimo de los sistemas informáticos. Mi enfoque proactivo y mi capacidad para adaptarme a entornos cambiantes me han permitido destacar en roles de soporte técnico, donde la resolución de problemas y la atención al detalle son fundamentales.</p>
+                <p>Estoy comprometido con el aprendizaje continuo y estoy siempre buscando oportunidades para expandir mis habilidades y conocimientos en el campo de la tecnología. Con una sólida base técnica y una mentalidad orientada a resultados, estoy preparado para contribuir de manera significativa al éxito de cualquier equipo o proyecto.</p>
+            </section>
+            
+            <section>
+                <h2>Experiencia Laboral</h2>
+               
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2021 - 2023</h3>
+                            <h4>Reparacion de PCs particular</h4>
+                            <p>Reparaba PCs de manera particular</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>01/06/2023 - Actualidad</h3>
+                            <h4>Soporte IT en Be Innovation Tech</h4>
+                            <p>mi trabajo en soporte tecnico es brindar asistencia tecnica a los usuarios que lo requieran aplicando la capa 1, 2 y 3 del modelo Osi </p>
+                            <p>en esta primera experiencia laboral obtuve muchos conocimientos en telecomunicaciones </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <div>
     </div>
-    <div class="floating-leaf leaf-1"></div>
-    <div class="floating-leaf leaf-2"></div>
-    <div class="floating-leaf leaf-3"></div>
+    <div>
+        </div>    
+            <section>
+                <h2>Educación</h2>
+                <p>Grado obtenido en [tu campo de estudio] - Universidad XYZ</p>
+                <p>Año de graduación: [año]</p>
+            </section>
+        </div>
+    </div>
 </body>
+
 </html>
