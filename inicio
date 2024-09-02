@@ -165,9 +165,9 @@
 
 <nav>
     <ul>
-        <li><a href="index.html">¿Quien Soy?</a></li>
-        <li><a href="trayectoria.html">Trayectoria Profesional</a></li>
-        <li><a href="redes.html">Redes Sociales</a></li>
+        <li><a href="inicio">¿Quien Soy?</a></li>
+        <li><a href="trayectoria">Trayectoria Profesional</a></li>
+        <li><a href="redes">Redes Sociales</a></li>
     </ul>
 </nav>
 
