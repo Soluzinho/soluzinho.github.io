@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Blog Tecnológico de Tobias</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
@@ -22,6 +21,8 @@
             padding: 60px 0;
             text-align: center;
             color: #fff;
+            background-attachment: fixed;
+            background-position: center;
         }
 
         header h1 {
@@ -52,11 +53,12 @@
             color: #fff;
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
         }
 
         nav ul li a:hover {
             color: #00bcd4;
+            text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
         }
 
         .container {
@@ -66,24 +68,53 @@
             background-color: rgba(255, 255, 255, 0.1);
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .gallery {
+            width: 100%;
+        }
+
+        .gallery div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
         }
 
         .gallery img {
-            width: 20%;
+            width: 15%;
             height: auto;
-            margin-bottom: 20px;
             border-radius: 10px;
-            transition: transform 0.3s ease, filter 0.3s ease;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
         }
 
         .gallery img:hover {
-            transform: scale(1.05);
-            filter: brightness(0.8);
+            transform: scale(1.1);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .gallery p {
+            width: 85%;
+            margin-left: 20px;
+            text-align: left;
         }
 
         .projects {
             margin-top: 40px;
+        }
+
+        .projects div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
 
         .project {
@@ -91,36 +122,19 @@
             background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
         .project:hover {
             transform: translateY(-10px);
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
         .project h2 {
             color: #00bcd4;
             font-size: 2em;
             margin-bottom: 10px;
-        }
-
-        .social-icons {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.5em;
-            transition: transform 0.3s ease, color 0.3s ease;
-            display: inline-block;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.2);
-            color: #00bcd4;
         }
 
         footer {
@@ -151,34 +165,40 @@
 
 <nav>
     <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#fotos">Fotos</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#redes">Redes Sociales</a></li>
+        <li><a href="index.html">¿Quien Soy?</a></li>
+        <li><a href="#">Curriculum</a></li>
+        <li><a href="redes.html">Redes Sociales</a></li>
     </ul>
 </nav>
 
 <div class="container" id="inicio">
     <section id="fotos" class="gallery">
-        <h2>Mis Fotos</h2>
-        <img src="imagenes/soluz1.jpg" alt="">
-        <img src="foto2.jpg" alt="">
-    </section>
-
-    <section id="proyectos" class="projects">
-        <h2>Mis Proyectos</h2>
-        <div class="project">
-            <h3>Pagina Web de Empanada</h3>
-            <p>para Empanada Group</p>
-            <a href="https://empanada.soluz.online" target="_blank">Ingresar a pagina web</a>
+        <h2>Quien soy</h2>
+        <div>
+            <img src="imagenes/soluz1.jpg" alt="">
+            <p>¡Hola! Soy Tobias, un apasionado desarrollador web y DevOps trainee en Be Innovation Tech, donde me especializo en la creación de soluciones innovadoras y en la optimización de procesos. Me encanta programar, desarrollar mini proyectos, y realizar mejoras en módulos ya existentes, siempre buscando formas de agilizar la producción y resolver problemas de manera creativa.</p>
+        </div>
+        <div>
+            <p>Además de mi enfoque en el desarrollo web, tengo un fuerte interés en la infraestructura de red, desde la creación de topologías hasta la configuración y monitoreo de redes. Mi objetivo actual es mejorar mi situación económica, con la meta de avanzar en el campo del software y, algún día, ser una fuente de inspiración para otros en el mundo del desarrollo.</p>
+            <img src="imagenes/soluz1.jpg" alt="">
+        </div>
+        <div>
+            <img src="imagenes/soluz1.jpg" alt="">
+            <p>Soy una persona centrada en mis objetivos, que valora la ética, la puntualidad y la lógica en todo lo que hago. Compito sanamente, aprendiendo de cada error para mejorar mis habilidades y procesos. Mi pasión es avanzar y evolucionar continuamente en esta emocionante industria.</p>
         </div>
     </section>
 
-    <section id="redes" class="social-icons">
-        <h2>Sígueme en</h2>
-        <a href="https://facebook.com"><i class="fa-brands fa-facebook"> Facebook</i></a>
-        <a href="https://www.instagram.com/soluz.boy"><i class="fa-brands fa-instagram"> Instagram</i></a>
+</div>
+<div class="container" id="inicio">
+    <section id="proyectos" class="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="project">
+            <h3>Página Web de Empanada</h3>
+            <p>Para Empanada Group</p>
+            <a href="https://empanada.soluz.online" target="_blank">Ingresar a página web</a>
+        </div>
     </section>
+
 </div>
 
 <footer>

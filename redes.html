@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Redes Sociales de Tobias</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1c1c1c, #0f0f0f);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: url('tech-header-bg.jpg') no-repeat center center/cover;
+            padding: 60px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: 900;
+            letter-spacing: 3px;
+            margin: 0;
+            animation: fadeIn 2s ease-out;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 40px;
+            border-top: 2px solid #00bcd4;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .social-board {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .social-board a {
+            width: 150px;
+            height: 150px;
+            background-color: #222;
+            border-radius: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2.5em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .social-board a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.8);
+        }
+
+        .social-board a i {
+            margin: 0;
+            pointer-events: none;
+        }
+
+        .social-board a span {
+            position: absolute;
+            bottom: -25px;
+            font-size: 0.9em;
+            color: #bbb;
+        }
+
+        footer {
+            background-color: #111;
+            color: #bbb;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            border-top: 2px solid #00bcd4;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mis Redes Sociales</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">¿Quien Soy?</a></li>
+        <li><a href="#">Curriculum</a></li>
+        <li><a href="redes.html">Redes Sociales</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <section id="redes" class="social-board">
+        <a href="https://www.linkedin.com/in/tobias-perez-zabala/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+        <a href="https://www.instagram.com/soluz.boy/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61552495044082" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span>
+        </a>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Redes Sociales de Tobias. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
