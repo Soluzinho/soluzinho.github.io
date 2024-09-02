@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trayectoria Profesional de Tobias</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1c1c1c, #0f0f0f);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: url('tech-header-bg.jpg') no-repeat center center/cover;
+            padding: 60px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: 900;
+            letter-spacing: 3px;
+            margin: 0;
+            animation: fadeIn 2s ease-out;
+            text-transform: uppercase;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: 900;
+            letter-spacing: 3px;
+            margin: 0;
+            animation: fadeIn 2s ease-out;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 40px;
+            border-top: 2px solid #00bcd4;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+            text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #00bcd4;
+            text-align: center;
+        }
+
+        /* Línea de tiempo */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* Línea vertical */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #00bcd4;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        /* Contenedores de eventos */
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        /* Lado izquierdo */
+        .timeline-item.left {
+            left: 0;
+        }
+
+        /* Lado derecho */
+        .timeline-item.right {
+            left: 50%;
+        }
+
+        /* Flechas */
+        .timeline-item::before {
+            content: " ";
+            position: absolute;
+            top: 20px;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+        }
+
+        /* Flecha izquierda */
+        .timeline-item.left::before {
+            right: 10px;
+            border-left-color: #111;
+        }
+
+        /* Flecha derecha */
+        .timeline-item.right::before {
+            left: 10px;
+            border-right-color: #111;
+        }
+
+        /* Contenido de los eventos */
+        .timeline-item .content {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 6px;
+            position: relative;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-item:hover .content {
+            transform: scale(1.05);
+        }
+
+        .timeline-item .content h3 {
+            margin: 0;
+            color: #00bcd4;
+        }
+
+        .timeline-item .content p {
+            margin: 10px 0 0;
+            font-size: 1em;
+            color: #bbb;
+        }
+
+        /* Círculos */
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -14px;
+            background-color: white;
+            border: 4px solid #00bcd4;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item.right::after {
+            left: -14px;
+
+        }
+
+        footer {
+            background-color: #111;
+            color: #bbb;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            border-top: 2px solid #00bcd4;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 25px;
+                margin-bottom: 20px;
+            }
+
+            .timeline-item.right {
+                left: 0%;
+            }
+
+            .timeline-item.left::before,
+            .timeline-item.right::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            .timeline-item::after {
+                left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Trayectoria Profesional</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">¿Quien Soy?</a></li>
+        <li><a href="trayectoria.html">Trayectoria Profesional</a></li>
+        <li><a href="redes.html">Redes Sociales</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2 class="section-title">Mi Trayectoria</h2>
+    <div class="timeline">
+        <div class="timeline-item left">
+            <div class="content">
+                <h3>jul 2024 - Actualidad</h3>
+                <p>DevOps Trainee en Be Innovation Tech</p>
+                <p>Incursion en desarrollo y soluciones creativas para mejorar tiempos en ciclo de produccion y elaboracion de software para clientes</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <h3>jun 2023 - jul 2024</h3>
+                <p>Soporte tecnico IT en Be Innovation Tech</p>
+                <p>Mi primer experiencia laboral</p>
+                <p>Realizando asistencia a usuarios y mantenimiento de equipos</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Trayectoria Profesional de Tobias. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
