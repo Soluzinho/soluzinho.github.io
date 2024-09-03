@@ -1,3 +1,3 @@
 # Pagina web de Tobias
 
-pagina creada para realizar pruebas
+pagina creada para blog de Tobias
