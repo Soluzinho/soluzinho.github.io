@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Tecnológico de Tobias</title>
+    <title>Blog de Tobias Perez Zabala</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
 
+
         body {
+
+            background: url("imagenes/header.jpg") repeat center center/cover;
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #242424, #141414);
             color: #fff;
             overflow-x: hidden;
         }
 
         header {
-            background: url('tech-header-bg.jpg') no-repeat center center/cover;
+            background: black;
             padding: 60px 0;
             text-align: center;
             color: #fff;
-            background-attachment: fixed;
-            background-position: center;
         }
+
 
         header h1 {
             font-size: 3.5em;
@@ -154,6 +155,58 @@
         @keyframes fadeIn {
             0% { opacity: 0; transform: translateY(-20px); }
             100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+                padding: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .timeline::after {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 25px;
+                margin-bottom: 20px;
+            }
+
+            .timeline-item.right {
+                left: 0%;
+            }
+
+            .timeline-item.left::before,
+            .timeline-item.right::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            .timeline-item::after {
+                left: 15px;
+            }
+
+            .container {
+                padding: 20px 10px;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
