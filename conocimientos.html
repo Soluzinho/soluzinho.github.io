@@ -112,7 +112,7 @@
         }
 
         .courses {
-            margin-top: 40px;
+            margin: 10px;
         }
 
         .courses div {
@@ -123,8 +123,40 @@
             text-align: center;
         }
 
+        /*"Ver Mas Cursos Finalizados"*/
+        .ver-mas{
+            color: #fff;
+            font-size: 1.5em;
+            padding: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.6em;
+        }
+
+        .ver-mas:hover{
+            color: rgba(0, 188, 212, 1);
+
+        }
+
+        /*Boton "Visualizar Certificados"*/
+        .course a{
+            color: #fff;
+            font-size: 1.5em;
+            background-color: rgba(168, 255, 240, 0.1);
+            border-radius:  10px;
+            padding: 5px;
+            text-decoration: none;
+
+        }
+
+        .course a:hover{
+            color: rgba(0, 188, 212, 1);
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+
+        }
+
         .course {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
@@ -133,14 +165,15 @@
         }
 
         .course:hover {
-            transform: translateY(-10px);
-            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
         }
 
         .course h2 {
             color: #00bcd4;
-            font-size: 2em;
-            margin-bottom: 10px;
+            font-size: 1.5em;
+            margin-bottom: 5px;
         }
 
         footer {
@@ -170,7 +203,7 @@
             }
 
             header {
-                height: 100px;
+                height: 105px;
             }
 
 
@@ -238,12 +271,13 @@
         <li><a href="redes.html">Redes Sociales</a></li>
     </ul>
 </nav>
-
+<!--
 <div class="container" id="work-in-progress">
     <img class="img-work" src="imagenes/work-in-progress.jpg" alt="">
 </div>
-<!--
+-->
 <div class="container" id="conocimientos">
+<!--
     <section id="knowledge" class="knowledge">
         <h2>Conocimientos</h2>
         <div>
@@ -259,27 +293,44 @@
             <p>Experiencia en monitoreo de redes, configuración de routers, switches, y creación de topologías eficientes para optimizar el tráfico de datos en empresas.</p>
         </div>
     </section>
-
+-->
     <section id="courses" class="courses">
-        <h2>Cursos</h2>
+        <h2>Ultimos 3 Cursos Finalizados</h2>
+
         <div class="course">
-            <h2>Curso de Desarrollo Web Completo</h2>
-            <p>Aprendí a desarrollar aplicaciones web completas usando HTML, CSS, JavaScript, y PHP.</p>
+            <h2>Aprende Python 3: Programación de Principiante a Avanzado</h2>
+            <p>Fundamentos de programación en Python, trabajo con JSON y APIs, visualización de datos, introducción al aprendizaje automático, y manipulación de archivos como Excel y TXT.</p>
+            <a href="https://ude.my/UC-402af887-0064-4042-8a9b-89d385320e94">Visualizar Certificado</a>
         </div>
+
         <div class="course">
-            <h2>Certificación en AWS Solutions Architect</h2>
-            <p>Adquirí conocimientos avanzados en diseño, implementación y administración de soluciones en la nube usando AWS.</p>
+            <h2>Docker - Guía práctica de uso para desarrolladores</h2>
+            <p>Uso de Docker CLI, construcción de imágenes, redes, volúmenes, Dockerfile, despliegues, Docker Compose, GitHub Actions y despliegues en Digital Ocean.</p>
+            <a href="https://ude.my/UC-1b562a49-8a9b-48df-b8c4-d5db2541f29e">Visualizar Certificado</a>
         </div>
+
         <div class="course">
-            <h2>Curso de Administración de Redes</h2>
-            <p>Me especialicé en la configuración y monitoreo de redes empresariales, con experiencia en herramientas como Wireshark y Nagios.</p>
+            <h2>Git y GitHub desde Cero a Experto</h2>
+            <p>Manejo avanzado de Git y GitHub, control de versiones local y en la nube, colaboración en proyectos en equipo, administración de proyectos y contribuciones a Open Source.</p>
+            <a href="https://ude.my/UC-a1c6f21b-5525-4fec-abca-e91d68aebfea">Visualizar Certificado</a>
         </div>
+
+        <a class="ver-mas" href="#">Ver Mas Cursos Finalizados</a>
     </section>
 </div>
--->
+
 <footer>
     <p>&copy; 2024 Conocimientos de Tobias. Todos los derechos reservados.</p>
 </footer>
 
 </body>
 </html>
+
+
+<!--
+<div class="course">
+    <h2>Domina SCRUM con JIRA Agile - Metodologías Ágiles [2024]</h2>
+    <p>Domina la herramienta JIRA y Transforma la manera de Gestionar Proyectos Agile</p>
+    <a href="https://ude.my/UC-7dce1a9f-5e94-46e9-b5cd-3c080f0a42fd">Visualizar Certificado</a>
+</div>
+-->
