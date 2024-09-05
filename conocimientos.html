@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Tobias Perez Zabala</title>
+    <title>Conocimientos de Tobias Perez Zabala</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
 
-
         body {
-
             background: url("imagenes/header.jpg") repeat center center/cover;
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -24,7 +22,6 @@
             text-align: center;
             color: #fff;
         }
-
 
         header h1 {
             font-size: 3.5em;
@@ -76,18 +73,25 @@
             text-align: center;
         }
 
-        .gallery {
-            width: 100%;
+        .img-work{
+            width: 30%;
+            height: auto;
         }
 
-        .gallery div {
+
+        .knowledge {
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .knowledge div {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
             width: 100%;
         }
 
-        .gallery img {
+        .knowledge img {
             width: 15%;
             height: auto;
             border-radius: 10px;
@@ -95,22 +99,22 @@
             transition: transform 0.5s ease, box-shadow 0.5s ease;
         }
 
-        .gallery img:hover {
+        .knowledge img:hover {
             transform: scale(1.1);
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
         }
 
-        .gallery p {
+        .knowledge p {
             width: 85%;
             margin-left: 20px;
             text-align: left;
         }
 
-        .projects {
+        .courses {
             margin-top: 40px;
         }
 
-        .projects div {
+        .courses div {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -118,7 +122,7 @@
             text-align: center;
         }
 
-        .project {
+        .course {
             margin-bottom: 40px;
             background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
@@ -127,12 +131,12 @@
             transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
-        .project:hover {
+        .course:hover {
             transform: translateY(-10px);
             background-color: rgba(255, 255, 255, 0.2);
         }
 
-        .project h2 {
+        .course h2 {
             color: #00bcd4;
             font-size: 2em;
             margin-bottom: 10px;
@@ -164,6 +168,10 @@
                 padding: 21.5px;
             }
 
+            .img-work{
+                width: 90%;
+            }
+
             nav ul {
                 flex-direction: column;
                 align-items: center;
@@ -173,30 +181,30 @@
                 margin: 10px 0;
             }
 
-            .timeline::after {
+            .knowledge::after {
                 left: 20px;
             }
 
-            .timeline-item {
+            .knowledge-item {
                 width: 100%;
                 padding-left: 60px;
                 padding-right: 25px;
                 margin-bottom: 20px;
             }
 
-            .timeline-item.right {
+            .knowledge-item.right {
                 left: 0%;
             }
 
-            .timeline-item.left::before,
-            .timeline-item.right::before {
+            .knowledge-item.left::before,
+            .knowledge-item.right::before {
                 left: 60px;
                 border: medium solid white;
                 border-width: 10px 10px 10px 0;
                 border-color: transparent white transparent transparent;
             }
 
-            .timeline-item::after {
+            .knowledge-item::after {
                 left: 15px;
             }
 
@@ -213,37 +221,58 @@
 <body>
 
 <header>
-    <h1>Blog de Tobias</h1>
+    <h1>Conocimientos de Tobias</h1>
 </header>
 
 <nav>
     <ul>
-        <li><a href="#">¿Quien Soy?</a></li>
+        <li><a href="index.html">¿Quien Soy?</a></li>
         <li><a href="trayectoria.html">Trayectoria Profesional</a></li>
-        <li><a href="conocimientos.html">Conocimientos</a></li>
+        <li><a href="#">Conocimientos</a></li>
         <li><a href="redes.html">Redes Sociales</a></li>
     </ul>
 </nav>
 
-<div class="container" id="inicio">
-    <section id="fotos" class="gallery">
-        <h2>¿Quien Soy?</h2>
+<div class="container" id="work-in-progress">
+    <img class="img-work" src="imagenes/work-in-progress.jpg" alt="">
+</div>
+<!--
+<div class="container" id="conocimientos">
+    <section id="knowledge" class="knowledge">
+        <h2>Conocimientos</h2>
         <div>
-            <img src="imagenes/soluz1.jpg" alt="">
-            <p>¡Hola! Soy Tobias, un apasionado desarrollador web y DevOps trainee en Be Innovation Tech, donde me especializo en la creación de soluciones innovadoras y en la optimización de procesos. Me encanta programar, desarrollar mini proyectos, y realizar mejoras en módulos ya existentes, siempre buscando formas de agilizar la producción y resolver problemas de manera creativa.</p>
+            <img src="imagenes/coding.jpg" alt="">
+            <p>Experiencia en desarrollo web con HTML, CSS, JavaScript, y frameworks como React y Angular. Trabajo con bases de datos relacionales y no relacionales, optimización de redes, y más.</p>
         </div>
         <div>
-            <p>Además de mi enfoque en el desarrollo web, tengo un fuerte interés en la infraestructura de red, desde la creación de topologías hasta la configuración y monitoreo de redes. Mi objetivo actual es mejorar mi situación económica, con la meta de avanzar en el campo del software y, algún día, ser una fuente de inspiración para otros en el mundo del desarrollo.</p>
-            <img src="imagenes/soluz2.jpg" alt="">
+            <p>Habilidades en administración de sistemas, con experiencia en Docker, Kubernetes, y servicios en la nube como AWS y Azure. Conocimientos avanzados en infraestructura de red y DevOps.</p>
+            <img src="imagenes/devops.jpg" alt="">
         </div>
         <div>
-            <img src="imagenes/soluz3.jpg" alt="">
-            <p>Soy una persona centrada en mis objetivos, que valora la ética, la puntualidad y la lógica en todo lo que hago. Compito sanamente, aprendiendo de cada error para mejorar mis habilidades y procesos. Mi pasión es avanzar y evolucionar continuamente en esta emocionante industria.</p>
+            <img src="imagenes/networking.jpg" alt="">
+            <p>Experiencia en monitoreo de redes, configuración de routers, switches, y creación de topologías eficientes para optimizar el tráfico de datos en empresas.</p>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Cursos</h2>
+        <div class="course">
+            <h2>Curso de Desarrollo Web Completo</h2>
+            <p>Aprendí a desarrollar aplicaciones web completas usando HTML, CSS, JavaScript, y PHP.</p>
+        </div>
+        <div class="course">
+            <h2>Certificación en AWS Solutions Architect</h2>
+            <p>Adquirí conocimientos avanzados en diseño, implementación y administración de soluciones en la nube usando AWS.</p>
+        </div>
+        <div class="course">
+            <h2>Curso de Administración de Redes</h2>
+            <p>Me especialicé en la configuración y monitoreo de redes empresariales, con experiencia en herramientas como Wireshark y Nagios.</p>
         </div>
     </section>
 </div>
+-->
 <footer>
-    <p>&copy; 2024 Blog de Tobias. Todos los derechos reservados.</p>
+    <p>&copy; 2024 Conocimientos de Tobias. Todos los derechos reservados.</p>
 </footer>
 
 </body>
