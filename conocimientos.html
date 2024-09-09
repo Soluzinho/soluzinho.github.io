@@ -8,11 +8,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
 
         body {
-            background: url("imagenes/header.jpg") repeat center center/cover;
+            background: url("imagenes/header.jpg") no-repeat;
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            color: #fff;
+            background-color: black;
+            color: white;
             overflow-x: hidden;
         }
 
@@ -53,11 +54,12 @@
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s ease, text-shadow 0.3s ease;
+            text-shadow: 2px 2px 5px rgba(0, 188, 212, 0.7);
         }
 
         nav ul li a:hover {
             color: #00bcd4;
-            text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+            text-shadow: 2px 2px 10px white;
         }
 
         .container {
@@ -302,38 +304,123 @@
 -->
 
     <section id="courses" class="courses">
-        <h2>Últimos 3 Cursos Finalizados</h2>
+        <h2>Cursos Finalizados</h2>
 
         <div class="course">
             <h2>Aprende Python 3: Programación de Principiante a Avanzado</h2>
-            <p>Fundamentos de programación en Python...</p>
+            <p>Explorar los fundamentos de Python, programación orientada a objetos y manejo de estructuras de datos.</p>
             <a href="https://ude.my/UC-402af887-0064-4042-8a9b-89d385320e94">Visualizar Certificado</a>
         </div>
-
+        
         <div class="course">
             <h2>Docker - Guía práctica de uso para desarrolladores</h2>
-            <p>Uso de Docker CLI, construcción de imágenes...</p>
+            <p>Uso de Docker para crear, gestionar y optimizar contenedores e imágenes, mejorando los flujos de trabajo de desarrollo y despliegue.</p>
             <a href="https://ude.my/UC-1b562a49-8a9b-48df-b8c4-d5db2541f29e">Visualizar Certificado</a>
         </div>
-
+        
         <div class="course">
             <h2>Git y GitHub desde Cero a Experto</h2>
-            <p>Manejo avanzado de Git y GitHub...</p>
+            <p>Dominar el control de versiones con Git y GitHub. Aprende a trabajar con ramas, colaborar en proyectos y automatizar procesos de desarrollo.</p>
             <a href="https://ude.my/UC-a1c6f21b-5525-4fec-abca-e91d68aebfea">Visualizar Certificado</a>
         </div>
 
         <!-- Cursos adicionales ocultos -->
         <div id="more-courses" class="more-courses">
-            <div class="course">
-                <h2>Curso de Certificación Cisco CCNA 200-301</h2>
-                <p>Conceptos fundamentales sobre redes, protocolos y configuraciones...</p>
-                <a href="#">Visualizar Certificado</a>
-            </div>
 
             <div class="course">
                 <h2>DevOps con Docker, Jenkins, Kubernetes</h2>
-                <p>Implementación de pipelines CI/CD, despliegue automatizado...</p>
-                <a href="#">Visualizar Certificado</a>
+                <p>Aprender a implementar pipelines CI/CD, automatizar despliegues y gestionar contenedores con Docker, Jenkins y Kubernetes</p>
+                <a href="https://ude.my/UC-a917f164-60de-4bd1-9042-a50f11455f9e/">Visualizar Certificado</a>
+            </div>
+
+            <div class="course">
+                <h2>Curso de Certificación Cisco CCNA 200-301</h2>
+                <p>Conceptos fundamentales sobre redes, protocolos, configuraciones, y administración de dispositivos de red.</p>
+                <a href="https://ude.my/UC-283587fe-1ac4-4bdb-9535-63a817fb4425">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>GIT y GITHUB desde cero!</h2>
+                <p>Control de versiones con Git, creación y manejo de repositorios en GitHub, ramas y colaboración.</p>
+                <a href="https://ude.my/UC-68af8716-7ffd-4d9f-b053-897d1cc2da88.">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Principios de radioenlaces para WISP</h2>
+                <p>Configuración y optimización de enlaces inalámbricos para proveedores de internet (WISP).</p>
+                <a href="https://ude.my/UC-b5a73ccd-9d4c-4057-a949-d710fb4470a9">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Fundamento de Redes: Cómo se realizan las comunicaciones</h2>
+                <p>Estudio de los conceptos básicos de redes y su aplicación en las comunicaciones modernas.</p>
+                <a href="https://ude.my/UC-1ab3665b-867f-4d7d-bd7e-22236f64c91c">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Fundamentos del técnico en redes de fibra óptica</h2>
+                <p>Instalación, mantenimiento y configuración de redes de fibra óptica.</p>
+                <a href="https://ude.my/UC-83a6a6a7-fc4f-4875-8852-343a4f52c8e6">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Linux desde lo básico a programar en shell script</h2>
+                <p>Uso del sistema operativo Linux, comandos básicos y scripting en bash.</p>
+                <a href="https://ude.my/UC-24f5e79f-3774-49d9-81cf-e0620a3b1234">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Introduction to Cybersecurity (CISCO NETWORKING)</h2>
+                <p>Conceptos de ciberseguridad, protección de datos y seguridad en redes.</p>
+                <a href="https://www.credly.com/badges/64309590-5745-43ef-a05a-bb084fa1481c/public_url">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Administración Avanzada de Windows</h2>
+                <p>Administración avanzada de sistemas operativos Windows, configuración y resolución de problemas.</p>
+                <a href="https://ude.my/UC-340d0eee-d1a4-43ca-938c-e6a76130d495">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Arduino electrónica y programación C desde cero</h2>
+                <p>Programación en C para proyectos de electrónica utilizando la plataforma Arduino.</p>
+                <a href="https://ude.my/UC-6a4a3879-96bf-4567-b4e3-8da7aaf69eb7">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Servicio de Dominio de Active Directory</h2>
+                <p>Administración de redes con Active Directory, creación y gestión de usuarios y políticas.</p>
+                <a href="https://ude.my/UC-537ae00e-e8d7-4098-94e2-3c1e24838a88">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Curso de Reparación de Laptops</h2>
+                <p>Diagnóstico y reparación de hardware y software en equipos portátiles.</p>
+                <a href="https://ude.my/UC-82001a0d-a750-4b71-b13b-cfa180a47d8e">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Scrum con Jira - Metodología Agile [2023]</h2>
+                <p>Implementación de la metodología Agile con Jira para gestión de proyectos.</p>
+                <a href="https://ude.my/UC-7dce1a9f-5e94-46e9-b5cd-3c080f0a42fd">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Curso de reparación de Computadoras Desde Cero</h2>
+                <p>Reparación de equipos de escritorio, diagnóstico y resolución de problemas de hardware y software.</p>
+                <a href="https://ude.my/UC-82001a0d-a750-4b71-b13b-cfa180a47d8e">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>Soporte Técnico a Computadoras en Entornos Corporativos</h2>
+                <p>Soporte técnico en redes y sistemas en entornos empresariales.</p>
+                <a href="https://ude.my/UC-7a96d481-a97c-43e9-b744-9b5bf22679aa">Visualizar Certificado</a>
+            </div>
+        
+            <div class="course">
+                <h2>[2023] Scrum Master Certificación</h2>
+                <p>Certificación Scrum Master para liderar equipos bajo metodologías ágiles.</p>
+                <a href="https://ude.my/UC-b327bca0-296c-444b-a1bd-7169c4a3654a">Visualizar Certificado</a>
             </div>
         </div>
 
@@ -354,10 +441,10 @@
 
         if (moreCourses.style.display === 'none') {
             moreCourses.style.display = 'block';  // Muestra los cursos adicionales
-            verMasLink.innerHTML = 'Ver Ultimos 3 Cursos';  // Cambia el texto a "Ver menos"
+            verMasLink.innerHTML = 'Reducir (3)';  // Cambia el texto a "Ver menos"
         } else {
             moreCourses.style.display = 'none';  // Oculta los cursos adicionales
-            verMasLink.innerHTML = 'Ver Todos Los Cursos';  // Cambia el texto a "Ver más"
+            verMasLink.innerHTML = 'Mostrar Todos (19)';  // Cambia el texto a "Ver más"
         }
     }
 
