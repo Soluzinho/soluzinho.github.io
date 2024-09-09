@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conocimientos de Tobias Perez Zabala</title>
+    <title>Conocimientos de Tobias</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
 
@@ -125,17 +125,19 @@
 
         /*"Ver Mas Cursos Finalizados"*/
         .ver-mas{
-            color: #fff;
+            color: white;
             font-size: 1.5em;
             padding: 5px;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.6em;
+            cursor: pointer; /* Hace que el texto "Ver más" parezca un botón */
+            filter: drop-shadow(2px 2px 5px rgba(0, 188, 212, 1));
         }
 
         .ver-mas:hover{
             color: rgba(0, 188, 212, 1);
-
+            filter: drop-shadow(2px 2px 10px white);
         }
 
         /*Boton "Visualizar Certificados"*/
@@ -174,6 +176,10 @@
             color: #00bcd4;
             font-size: 1.5em;
             margin-bottom: 5px;
+        }
+
+        .more-courses {
+            display: none; /* Oculta los cursos adicionales por defecto */
         }
 
         footer {
@@ -294,34 +300,72 @@
         </div>
     </section>
 -->
+
     <section id="courses" class="courses">
-        <h2>Ultimos 3 Cursos Finalizados</h2>
+        <h2>Últimos 3 Cursos Finalizados</h2>
 
         <div class="course">
             <h2>Aprende Python 3: Programación de Principiante a Avanzado</h2>
-            <p>Fundamentos de programación en Python, trabajo con JSON y APIs, visualización de datos, introducción al aprendizaje automático, y manipulación de archivos como Excel y TXT.</p>
+            <p>Fundamentos de programación en Python...</p>
             <a href="https://ude.my/UC-402af887-0064-4042-8a9b-89d385320e94">Visualizar Certificado</a>
         </div>
 
         <div class="course">
             <h2>Docker - Guía práctica de uso para desarrolladores</h2>
-            <p>Uso de Docker CLI, construcción de imágenes, redes, volúmenes, Dockerfile, despliegues, Docker Compose, GitHub Actions y despliegues en Digital Ocean.</p>
+            <p>Uso de Docker CLI, construcción de imágenes...</p>
             <a href="https://ude.my/UC-1b562a49-8a9b-48df-b8c4-d5db2541f29e">Visualizar Certificado</a>
         </div>
 
         <div class="course">
             <h2>Git y GitHub desde Cero a Experto</h2>
-            <p>Manejo avanzado de Git y GitHub, control de versiones local y en la nube, colaboración en proyectos en equipo, administración de proyectos y contribuciones a Open Source.</p>
+            <p>Manejo avanzado de Git y GitHub...</p>
             <a href="https://ude.my/UC-a1c6f21b-5525-4fec-abca-e91d68aebfea">Visualizar Certificado</a>
         </div>
 
-        <a class="ver-mas" href="#">Ver Mas Cursos Finalizados</a>
+        <!-- Cursos adicionales ocultos -->
+        <div id="more-courses" class="more-courses">
+            <div class="course">
+                <h2>Curso de Certificación Cisco CCNA 200-301</h2>
+                <p>Conceptos fundamentales sobre redes, protocolos y configuraciones...</p>
+                <a href="#">Visualizar Certificado</a>
+            </div>
+
+            <div class="course">
+                <h2>DevOps con Docker, Jenkins, Kubernetes</h2>
+                <p>Implementación de pipelines CI/CD, despliegue automatizado...</p>
+                <a href="#">Visualizar Certificado</a>
+            </div>
+        </div>
+
+        <!-- Botón de "Ver más" -->
+        <a class="ver-mas" id="ver-mas-link" onclick="toggleMoreCourses()">Ver Mas Cursos Finalizados</a>
     </section>
 </div>
+
 
 <footer>
     <p>&copy; 2024 Conocimientos de Tobias. Todos los derechos reservados.</p>
 </footer>
+
+<script>
+    function toggleMoreCourses() {
+        const moreCourses = document.getElementById('more-courses');
+        const verMasLink = document.getElementById('ver-mas-link');
+
+        if (moreCourses.style.display === 'none') {
+            moreCourses.style.display = 'block';  // Muestra los cursos adicionales
+            verMasLink.innerHTML = 'Ver Ultimos 3 Cursos';  // Cambia el texto a "Ver menos"
+        } else {
+            moreCourses.style.display = 'none';  // Oculta los cursos adicionales
+            verMasLink.innerHTML = 'Ver Todos Los Cursos';  // Cambia el texto a "Ver más"
+        }
+    }
+
+    // Asegúrate de que los cursos adicionales estén ocultos cuando se cargue la página
+    window.onload = function() {
+        document.getElementById('more-courses').style.display = 'none';
+    };
+</script>
 
 </body>
 </html>
