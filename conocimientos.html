@@ -76,6 +76,10 @@
             text-align: center;
         }
 
+        .cursos-finalizados{
+            text-shadow: 0 0 10px black;
+        }
+
         .img-work{
             width: 30%;
             height: auto;
@@ -263,22 +267,28 @@
             }
         }
 
-        #img-python3{
-            background: url(imagenes/difuminado/python.png) center/cover;
+        /*IMAGENES DIFUMINADAS PARA CURSOS*/
+        #img-python3, #img-git, #img-docker, #img-cisco, #img-devops {
+            background-position: center;
+            background-size: cover;
             width: auto;
             height: 10%;
         }
 
-        #img-git{
-            background: url(imagenes/difuminado/git-github.png) center/cover;
-            width: auto;
-            height: 10%;
+        #img-python3 {
+            background-image: url(imagenes/difuminado/python.png);
         }
-
-        #img-docker{
-            background: url(imagenes/difuminado/docker.jpg) center/cover;
-            width: auto;
-            height: 10%;
+        #img-git {
+            background-image: url(imagenes/difuminado/git-github.png);
+        }
+        #img-docker {
+            background-image: url(imagenes/difuminado/docker.jpg);
+        }
+        #img-devops {
+            background-image: url(imagenes/difuminado/devops.jpg);
+        }
+        #img-cisco {
+            background-image: url(imagenes/difuminado/cisco.jpg);
         }
     </style>
 </head>
@@ -321,7 +331,7 @@
 -->
 
     <section id="courses" class="courses">
-        <h2>Cursos Finalizados</h2>
+        <h2 class="cursos-finalizados">Cursos Finalizados</h2>
 
         <div class="course" id="img-python3">
             <h2>Aprende Python 3: Programación de Principiante a Avanzado</h2>
@@ -344,13 +354,13 @@
         <!-- Cursos adicionales ocultos -->
         <div id="more-courses" class="more-courses">
 
-            <div class="course">
+            <div class="course" id="img-devops">
                 <h2>DevOps con Docker, Jenkins, Kubernetes</h2>
                 <p>Aprender a implementar pipelines CI/CD, automatizar despliegues y gestionar contenedores con Docker, Jenkins y Kubernetes</p>
                 <a href="https://ude.my/UC-a917f164-60de-4bd1-9042-a50f11455f9e/">Visualizar Certificado</a>
             </div>
 
-            <div class="course">
+            <div class="course" id="img-cisco">
                 <h2>Curso de Certificación Cisco CCNA 200-301</h2>
                 <p>Conceptos fundamentales sobre redes, protocolos, configuraciones, y administración de dispositivos de red.</p>
                 <a href="https://ude.my/UC-283587fe-1ac4-4bdb-9535-63a817fb4425">Visualizar Certificado</a>
