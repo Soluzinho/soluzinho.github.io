@@ -262,14 +262,24 @@
                 font-size: 1.5em;
             }
         }
-/*
+
         #img-python3{
-            background: url(imagenes/wallpapers/python.png) center/cover;
+            background: url(imagenes/difuminado/python.png) center/cover;
             width: auto;
             height: 10%;
-            filter: blur(4px);
         }
-*/
+
+        #img-git{
+            background: url(imagenes/difuminado/git-github.png) center/cover;
+            width: auto;
+            height: 10%;
+        }
+
+        #img-docker{
+            background: url(imagenes/difuminado/docker.jpg) center/cover;
+            width: auto;
+            height: 10%;
+        }
     </style>
 </head>
 <body>
@@ -319,13 +329,13 @@
             <a href="https://ude.my/UC-402af887-0064-4042-8a9b-89d385320e94">Visualizar Certificado</a>
         </div>
         
-        <div class="course">
+        <div class="course" id="img-docker">
             <h2>Docker - Guía práctica de uso para desarrolladores</h2>
             <p>Uso de Docker para crear, gestionar y optimizar contenedores e imágenes, mejorando los flujos de trabajo de desarrollo y despliegue.</p>
             <a href="https://ude.my/UC-1b562a49-8a9b-48df-b8c4-d5db2541f29e">Visualizar Certificado</a>
         </div>
         
-        <div class="course">
+        <div class="course" id="img-git">
             <h2>Git y GitHub desde Cero a Experto</h2>
             <p>Dominar el control de versiones con Git y GitHub. Aprende a trabajar con ramas, colaborar en proyectos y automatizar procesos de desarrollo.</p>
             <a href="https://ude.my/UC-a1c6f21b-5525-4fec-abca-e91d68aebfea">Visualizar Certificado</a>
@@ -432,7 +442,7 @@
         </div>
 
         <!-- Botón de "Ver más" -->
-        <a class="ver-mas" id="ver-mas-link" onclick="toggleMoreCourses()">Ver Mas Cursos Finalizados</a>
+        <a class="ver-mas" id="ver-mas-link" onclick="toggleMoreCourses()">Mostrar Todos (19)</a>
     </section>
 </div>
 
