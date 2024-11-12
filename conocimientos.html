@@ -273,7 +273,7 @@
         #img-cisco, #img-git2, #img-redes3, #img-redes, #img-fibra,
         #img-linux, #img-ciberseg, #img-arduino, #img-win,
         #img-active_directory, #img-notebook, #img-jira, #img-pc,
-        #img-industrial, #img-scrum, #img-linux2{
+        #img-industrial, #img-scrum, #img-linux2, #img-network-basic{
             background-position: center;
             background-size: cover;
             width: auto;
@@ -340,7 +340,9 @@
         #img-scrum {
             background-image: url(imagenes/difuminado/scrum.jpeg);
         }
-
+        #img-network-basic{
+            background-image: url(imagenes/difuminado/cisco2.jpeg);
+        }
     </style>
 </head>
 <body>
@@ -384,6 +386,12 @@
     <section id="courses" class="courses">
         <h2 class="cursos-finalizados">Cursos Finalizados</h2>
 
+        <div class="course" id="img-network-basic">
+            <h2>Networking Basics</h2>
+            <p>Conceptos Básicos de Redes Comience a aprender los conceptos básicos de redes de computadoras y descubra cómo funcionan las redes.</p>
+            <a href="https://www.credly.com/badges/38fa3ce5-6d04-441c-b019-2eaaf6381d49/public_url">Visualizar Certificado</a>
+        </div>
+
         <div class="course" id="img-linux2">
             <h2>Aprende Linux desde lo básico a programar en shell script</h2>
             <p>Se exploró Permisos, Gestión de usuarios y grupos, Usar el editor de textox VI, Manejar Backups y archivados, programar con Shell Scripts</p>
@@ -396,14 +404,14 @@
             <a href="https://ude.my/UC-402af887-0064-4042-8a9b-89d385320e94">Visualizar Certificado</a>
         </div>
         
-        <div class="course" id="img-docker">
-            <h2>Docker - Guía práctica de uso para desarrolladores</h2>
-            <p>Uso de Docker para crear, gestionar y optimizar contenedores e imágenes, mejorando los flujos de trabajo de desarrollo y despliegue.</p>
-            <a href="https://ude.my/UC-1b562a49-8a9b-48df-b8c4-d5db2541f29e">Visualizar Certificado</a>
-        </div>
-        
         <!-- Cursos adicionales ocultos -->
         <div id="more-courses" class="more-courses">
+
+            <div class="course" id="img-docker">
+                <h2>Docker - Guía práctica de uso para desarrolladores</h2>
+                <p>Uso de Docker para crear, gestionar y optimizar contenedores e imágenes, mejorando los flujos de trabajo de desarrollo y despliegue.</p>
+                <a href="https://ude.my/UC-1b562a49-8a9b-48df-b8c4-d5db2541f29e">Visualizar Certificado</a>
+            </div>
 
             <div class="course" id="img-git">
                 <h2>Git y GitHub desde Cero a Experto</h2>
@@ -509,7 +517,7 @@
         </div>
 
         <!-- Botón de "Ver más" -->
-        <a class="ver-mas" id="ver-mas-link" onclick="toggleMoreCourses()">Mostrar Todos (20)</a>
+        <a class="ver-mas" id="ver-mas-link" onclick="toggleMoreCourses()">Mostrar Todos (21)</a>
     </section>
 </div>
 
@@ -528,11 +536,10 @@
             verMasLink.innerHTML = 'Reducir (Ultimas 3)';  // Cambia el texto a "Ver menos"
         } else {
             moreCourses.style.display = 'none';  // Oculta los cursos adicionales
-            verMasLink.innerHTML = 'Mostrar Todos (20)';  // Cambia el texto a "Ver más"
+            verMasLink.innerHTML = 'Mostrar Todos (21)';  // Cambia el texto a "Ver más"
         }
     }
 
-    // Asegúrate de que los cursos adicionales estén ocultos cuando se cargue la página
     window.onload = function() {
         document.getElementById('more-courses').style.display = 'none';
     };
